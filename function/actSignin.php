@@ -2,8 +2,8 @@
 
     include "../conn.php";
 
-    $email = @$_POST['email'];
-    $password = sha1(@$_POST['password']);
+    $email = htmlentities(@$_POST['email'], ENT_QUOTES);
+    $password = sha1(htmlentities(@$_POST['password'], ENT_QUOTES));
 
     $sql = "SELECT * FROM users where email = '$email' and password = '$password'";
     $result = $conn->query($sql);
