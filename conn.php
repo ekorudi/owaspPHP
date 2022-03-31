@@ -8,7 +8,7 @@ if (mysqli_connect_errno()) {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-$host = 'http://localhost/secure-coding-karcis/';
+$host = 'http://localhost:7000/owaspphp/';
 
 error_reporting(E_ALL);
 
