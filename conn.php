@@ -1,6 +1,6 @@
 <?php
 include "db.php";
-$host = 'https://w2.swift.id/test/';
+$host = 'https://w2.swift.id/';
 
 session_start();
 
@@ -17,7 +17,7 @@ if (mysqli_connect_errno()) {
 }
 
 
-error_reporting(E_ALL); // hanya boleh ada di developement 
+//error_reporting(E_ALL); // hanya boleh ada di developement 
 
 function sanitizeEmpty($var,$url) {
   if(empty($var)){
