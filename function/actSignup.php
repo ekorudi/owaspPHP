@@ -1,5 +1,5 @@
 <?php
-    include "../conn.php";
+    include "../conn-nosession.php";
 
     $fullname = @$_POST['fullname'];
     $email = htmlentities(@$_POST['email'], ENT_QUOTES);

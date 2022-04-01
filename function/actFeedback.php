@@ -4,7 +4,7 @@ include "../conn.php";
 @session_start();
 
 $id_user = @$_SESSION['id'];
-$feedback = @$_POST['feedback'];
+$feedback = strip_tags( @$_POST['feedback'] );
 
 
 // insert table feedback

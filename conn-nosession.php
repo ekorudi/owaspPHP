@@ -1,13 +1,7 @@
 <?php
 include "db.php";
-$host = 'https://w2.swift.id/';
+$host = 'https://w2.swift.id/test/';
 
-session_start();
-
-if (!isset($_SESSION['id'])   ) {
-    echo "Please login first : " . basename(__FILE__, '.php');
-    die();
-}
 
 $conn = mysqli_connect($db_host, $db_username, $db_password, $db_name);
 

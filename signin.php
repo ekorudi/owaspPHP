@@ -1,5 +1,5 @@
 <?php
-include "header.php";
+include "header-signup.php";
 ?>
 <script src="https://www.google.com/recaptcha/api.js"></script>
 
