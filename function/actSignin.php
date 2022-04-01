@@ -1,6 +1,6 @@
 <?php
 
-    include "../conn.php";
+    include "../conn-nosession.php";
 
     $email = htmlentities(@$_POST['email'], ENT_QUOTES);
     $password = sha1(htmlentities(@$_POST['password'], ENT_QUOTES));
